@@ -21,8 +21,7 @@ def fizzbuzz(number : int=0) -> str:
 # print the result.
 def main():
     # TODO: add your code here
-    for number in range(1,101):
-        print(fizzbuzz(number))
+    print(fizzbuzz())
 
 if __name__ == "__main__":
     main()
