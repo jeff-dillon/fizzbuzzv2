@@ -10,9 +10,10 @@
 # If the number is evenly divisble by 3, the function returns "fizz"
 # If the number is evenly divisble by 5, the function returns "buzz"
 # If the number is evenly divisble by 3 and 5, the function returns "fizzbuzz"
-def fizzbuzz(number=0):
+# If the number is not evenly divisible by 3 or 5, the function returns the number.
+def fizzbuzz(number : int=0) -> str:
     # TODO: add your code here
-    return number
+    return str(number)
 
 # Add your code to the main() function.
 # The main() function is run when the script is called from the command line.
@@ -20,7 +21,8 @@ def fizzbuzz(number=0):
 # print the result.
 def main():
     # TODO: add your code here
-    print(fizzbuzz())
+    for number in range(1,101):
+        print(fizzbuzz(number))
 
 if __name__ == "__main__":
     main()
