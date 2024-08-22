@@ -1,23 +1,26 @@
 # Instructions
-# Add your code to the fizzbuzz function.
+# Write a Python program that prints the numbers from 1 to 100. If the number 
+# is dividable by 3 print Fizz, if the number is dividable by 5 print Buzz 
+# instead of the number. If the number is dividable by 3 and 5 print FizzBuzz 
+# instead of the number.
+
+
+# Add your code to the fizzbuzz() function.
 # The function takes a number as an argument.
 # If the number is evenly divisble by 3, the function returns "fizz"
 # If the number is evenly divisble by 5, the function returns "buzz"
 # If the number is evenly divisble by 3 and 5, the function returns "fizzbuzz"
-def fizzbuzz(number):
-    # add your code here
-    if(number % 3 == 0 and number % 5 == 0):
-        return "fizzbuzz"
-    elif(number % 3 == 0):
-        return "fizz"
-    elif(number % 5 == 0):
-        return "buzz"
-    else:
-        return number
+def fizzbuzz(number=0):
+    # TODO: add your code here
+    return number
 
+# Add your code to the main() function.
+# The main() function is run when the script is called from the command line.
+# Loop through all numbers from 1 to 100 and call the fizzbuzz() funcion and
+# print the result.
 def main():
-    for number in range(1,101):
-        print(fizzbuzz(number))
+    # TODO: add your code here
+    print(fizzbuzz())
 
 if __name__ == "__main__":
     main()
